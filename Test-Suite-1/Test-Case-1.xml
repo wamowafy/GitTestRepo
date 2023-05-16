@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="0658b812-4b3f-4d0f-bc60-92bd4acac47a" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test Case 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0658b812-4b3f-4d0f-bc60-92bd4acac47afileName">Test-Case-1</con:setting>
+  </con:settings>
+  <con:testStep type="multiConfigureTestStep" name="API Connection" id="4d53d8ca-c2f9-4b0d-8ac0-744b2c2a7d4a">
+    <con:settings/>
+    <con:config activeStep="restMultiTestStep" xsi:type="con:MultiConfigurationStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequestStep service="REST Service 1" methodName="Login" resourcePath="/login" xsi:type="con:RestRequestStep">
+        <con:restRequest name="API Connection" id="ea1f5b8d-9afb-440f-900b-9c9d38b9fbb4" mediaType="application/json">
+          <con:settings/>
+          <con:encoding>UTF-8</con:encoding>
+          <con:request/>
+          <con:assertion type="Valid HTTP Status Codes" id="cc89334b-9120-4ca1-84b9-a49f9f095c75" name="Valid HTTP Status Codes">
+            <con:settings/>
+            <con:configuration>
+              <codes>200</codes>
+            </con:configuration>
+          </con:assertion>
+          <con:assertion type="Response SLA Assertion" id="441165d3-7257-49a6-bee6-ed7dff3b6788" name="Response SLA">
+            <con:configuration>
+              <SLA>200</SLA>
+            </con:configuration>
+          </con:assertion>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          </con:credentials>
+          <con:parameters>
+            <con:entry key="response_type" value=""/>
+            <con:entry key="client_id" value=""/>
+          </con:parameters>
+          <con:parametersType>
+            <con:entry key="response_type" value="QUERY"/>
+            <con:entry key="client_id" value="QUERY"/>
+          </con:parametersType>
+          <con:parametersDisablesEncoding>
+            <con:entry key="response_type" value="false"/>
+            <con:entry key="client_id" value="false"/>
+          </con:parametersDisablesEncoding>
+          <con:environmentSpec/>
+        </con:restRequest>
+      </con:restRequestStep>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

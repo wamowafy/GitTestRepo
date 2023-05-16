@@ -42,6 +42,12 @@
       </con:restRequestStep>
     </con:config>
   </con:testStep>
+  <con:testStep type="WebHookTestStep" name="Webhook" id="1e87ceb7-4655-4529-9002-5b6a35605659">
+    <con:settings/>
+    <con:config>
+      <path/>
+    </con:config>
+  </con:testStep>
   <con:properties/>
   <con:reportParameters/>
 </con:testCase>

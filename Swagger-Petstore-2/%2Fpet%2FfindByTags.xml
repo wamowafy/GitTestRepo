@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/pet/findByTags" path="/pet/findByTags" id="e4f6e031-f165-4f16-8f33-462c01bfde49">
+  <con:settings id="acb4a530-0ea0-4226-aa3f-f3783acddc67">
+    <con:setting id="95ac9b7c-cddc-4491-96bf-abe5939194f3fileName">%2Fpet%2FfindByTags</con:setting>
+    <con:setting id="e4f6e031-f165-4f16-8f33-462c01bfde49fileName">%2Fpet%2FfindByTags</con:setting>
+  </con:settings>
+  <con:parameters/>
+</con:resource>

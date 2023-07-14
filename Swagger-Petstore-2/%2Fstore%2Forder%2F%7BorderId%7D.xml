@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/store/order/{orderId}" path="/store/order/{orderId}" id="cb2bf152-92b5-4fa7-8eb8-25d1a6d949fe">
+  <con:settings id="61dc302b-298e-4216-98a2-fb650a4b9d93">
+    <con:setting id="0cd6cca4-00d7-40c4-a1d7-e75340edac48fileName">%2Fstore%2Forder%2F%7BorderId%7D</con:setting>
+    <con:setting id="cb2bf152-92b5-4fa7-8eb8-25d1a6d949fefileName">%2Fstore%2Forder%2F%7BorderId%7D</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getOrderById" id="e3a858fc-5ec9-45ad-a5f2-e4e2a282804d" method="GET">
+    <con:description>For valid response try integer IDs with value >= 1 and &lt;= 10.\ \ Other values will generated exceptions</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>orderId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>ID of pet that needs to be fetched</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "id" : 0,
+  "petId" : 0,
+  "quantity" : 0,
+  "shipDate" : "2015-07-20T15:49:04-07:00",
+  "status" : "placed",
+  "complete" : false
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<Order>
+   <id>0</id>
+   <petId>0</petId>
+   <quantity>0</quantity>
+   <shipDate>2015-07-20T15:49:04-07:00</shipDate>
+   <status>placed</status>
+   <complete>false</complete>
+</Order>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="21424891-a17c-4027-8e5c-9379bfb8e4e0" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="deleteOrder" id="7799a3f7-661e-4ea9-860f-82bbada9bb77" method="DELETE">
+    <con:description>For valid response try integer IDs with positive integer value.\ \ Negative or non-integer values will generate API errors</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>orderId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>ID of the order that needs to be deleted</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="9a3cd55a-8265-4081-aabe-51350b826e31" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

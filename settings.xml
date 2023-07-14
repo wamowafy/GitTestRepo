@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="5a1da3b1-81ca-403c-aec7-21c3ab0df365" created="3.45.0" activeEnvironment="Default environment" name="Project 4" projectVersion="" updated="3.45.0" encryptionMode="Not encrypted" resourceRoot="" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings/>
+<con:soapui-project xmlns:con="http://eviware.com/soapui/config" id="5a1da3b1-81ca-403c-aec7-21c3ab0df365" created="3.45.0" activeEnvironment="Local" name="Project 4" projectVersion="" updated="3.47.0" encryptionMode="Not encrypted" resourceRoot="" compositeProjectFormat="1.3">
+  <con:settings>
+    <con:setting id="5a1da3b1-81ca-403c-aec7-21c3ab0df365fileName">Project-4-readyapi-project</con:setting>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Settings File Password" value=""/>
+  <con:entry key="Report Format(s)" value="XML"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Slack Channel(s)" value=""/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Test Suite Tags" value=""/>
+  <con:entry key="Select Report Type" value="JUnit-Style report for automation"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Test Suite" value="Test Suite 1"/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Test Case" value="Test Case 1"/>
+  <con:entry key="Slack Access Token" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\ReadyAPI-3.47.0\bin"/>
+  <con:entry key="Environment" value="Local"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="${WORKSPACE}"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting>
+  </con:settings>
   <con:properties/>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>
@@ -37,6 +76,12 @@
 // fos.close()</con:script>
   </con:eventHandlers>
   <con:environment id="3c962470-e4f3-4d56-b355-cfa3a8a33131" name="Local" index="0">
+    <con:service type="REST" name="Swagger Petstore 2">
+      <con:endpoint authProfile="Inherit From Parent" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="" areGlobalProxySettingsIgnored="false">lolcal</con:endpoint>
+    </con:service>
+    <con:service type="REST" name="REST Service 1">
+      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="" areGlobalProxySettingsIgnored="false">local</con:endpoint>
+    </con:service>
     <con:databaseConnectionContainer/>
     <con:jmsConnectionContainer/>
   </con:environment>
@@ -44,7 +89,15 @@
     <con:name>LocalVirtServer</con:name>
     <con:url>http://localhost:9018</con:url>
   </con:virtServer>
-  <con:authRepository/>
+  <con:authRepository>
+    <con:basicAuthEntry>
+      <con:name>Admin</con:name>
+      <con:type>Basic</con:type>
+      <con:username>admin</con:username>
+      <con:password>passs</con:password>
+      <con:preemptive>false</con:preemptive>
+    </con:basicAuthEntry>
+  </con:authRepository>
   <con:environmentSpec>
     <con:entry environmentId="3c962470-e4f3-4d56-b355-cfa3a8a33131">
       <con:authProfile>No Authorization</con:authProfile>

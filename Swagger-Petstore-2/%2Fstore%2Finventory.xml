@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/store/inventory" path="/store/inventory" id="4c29cef3-13bf-46a3-8847-78ebf257dcc6">
+  <con:settings id="62af1da9-4199-449a-afbe-5afb96131db7">
+    <con:setting id="61d7d254-d118-4aa3-8c79-113ab37b2582fileName">%2Fstore%2Finventory</con:setting>
+    <con:setting id="4c29cef3-13bf-46a3-8847-78ebf257dcc6fileName">%2Fstore%2Finventory</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getInventory" id="3f0761b5-1c49-4c2b-8cab-f03ccb92010d" method="GET">
+    <con:description>Returns a map of status codes to quantities</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "additionalProp1" : 0,
+  "additionalProp2" : 0,
+  "additionalProp3" : 0
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="56218d5f-d359-4f44-b5b6-a95fc3aca450" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:interface xsi:type="con:RestService" id="649e1b59-6438-4f71-85d0-49af8614e8a1" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 1" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" xsi:type="con:RestService" id="649e1b59-6438-4f71-85d0-49af8614e8a1" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 1" type="rest">
+  <con:settings id="bb4c6f97-3877-448a-91aa-fff6b3dcb649">
     <con:setting id="649e1b59-6438-4f71-85d0-49af8614e8a1fileName">REST-Service-1</con:setting>
+    <con:setting id="CreateWadlDocumentationAction@report-directory">C:\ReadyAPI</con:setting>
   </con:settings>
   <con:definitionCache type="TEXT" rootPart=""/>
   <con:endpoints/>

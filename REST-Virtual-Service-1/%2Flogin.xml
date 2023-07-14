@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:restMockAction name="/login" method="GET" resourcePath="/login" id="b11a0cae-7e2f-4ae1-8cb9-bc47c49e037f" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/login" method="GET" resourcePath="/login" id="b11a0cae-7e2f-4ae1-8cb9-bc47c49e037f">
+  <con:settings id="26e34f3b-eecc-4e71-a789-f78d836ee481">
     <con:setting id="b11a0cae-7e2f-4ae1-8cb9-bc47c49e037ffileName">%2Flogin</con:setting>
   </con:settings>
   <con:defaultResponse>Fail</con:defaultResponse>

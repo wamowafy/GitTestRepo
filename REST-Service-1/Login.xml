@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="Login" path="/login" id="99391c32-8521-480c-baab-98faffe31666" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="Login" path="/login" id="99391c32-8521-480c-baab-98faffe31666">
+  <con:settings id="5a561fbb-48f5-49c4-8e10-4995c2b3d7d7">
     <con:setting id="99391c32-8521-480c-baab-98faffe31666fileName">Login</con:setting>
   </con:settings>
   <con:parameters/>
@@ -52,7 +52,7 @@
       </con:parameterOrder>
       <con:environmentSpec>
         <con:entry environmentId="3c962470-e4f3-4d56-b355-cfa3a8a33131">
-          <con:authProfile>Inherit From Parent</con:authProfile>
+          <con:authProfile>Admin</con:authProfile>
         </con:entry>
       </con:environmentSpec>
     </con:request>

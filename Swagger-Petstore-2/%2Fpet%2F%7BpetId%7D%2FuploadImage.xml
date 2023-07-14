@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/pet/{petId}/uploadImage" path="/pet/{petId}/uploadImage" id="98af958a-7d92-41bf-9134-a908529506d2">
+  <con:settings id="fabdfe51-012e-48f4-a5cc-fc2478ef2de3">
+    <con:setting id="1872aad3-9c1b-4f48-982a-9ffc1acb5a82fileName">%2Fpet%2F%7BpetId%7D%2FuploadImage</con:setting>
+    <con:setting id="98af958a-7d92-41bf-9134-a908529506d2fileName">%2Fpet%2F%7BpetId%7D%2FuploadImage</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="uploadFile" id="70519553-34e0-4774-931f-2bc56bb64ed4" method="POST">
+    <con:description>uploads an image</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>petId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>ID of pet to update</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "code" : 0,
+  "type" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/octet-stream</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="6be4e748-cac4-4bf6-9842-03fdf4da4e03" mediaType="application/octet-stream">
+      <con:settings/>
+      <con:endpoint>https://petstore.swagger.io/v2</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="3c962470-e4f3-4d56-b355-cfa3a8a33131">
+          <con:authProfile>Admin</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+  </con:method>
+</con:resource>
